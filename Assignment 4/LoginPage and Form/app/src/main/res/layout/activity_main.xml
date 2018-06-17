@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lgn"
+    android:orientation="vertical"
+    tools:context=".mainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/index" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:hapticFeedbackEnabled="false"
+        android:orientation="vertical"
+        tools:context=".login"
+        tools:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="1dp"
+                    android:text="UserName"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="245dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint=" Enter Your User Name"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@android:color/holo_orange_light" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal"
+                tools:paddingBottom="55dp"
+                tools:paddingTop="44dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="35dp"
+                    android:text="Password"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/loginbutton"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="55dp"
+            android:background="@android:color/white"
+            android:onClick="startNewActivity"
+            android:text="Login"
+            android:textSize="18sp"
+            android:visibility="visible"
+            tools:layout_marginLeft="80dp"
+            tools:layout_width="190dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:background="@android:color/holo_orange_light"
+            android:text="RESET"
+            android:textSize="18sp"
+            android:visibility="visible"
+            tools:layout_width="190dp" />
+
+    </LinearLayout>
+</LinearLayout>
