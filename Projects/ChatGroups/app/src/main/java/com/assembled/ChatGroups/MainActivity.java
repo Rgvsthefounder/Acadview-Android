@@ -33,7 +33,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    //    request code for signin
+    // request code for signin
     private static final int RC_SIGN_IN = 123;
     private static final int RC_PIX = 101;
 
@@ -46,12 +46,12 @@ public class MainActivity extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference messageReference, userReference;
 
-    //    authenticator provider
+    //  Authenticator providers
     List<AuthUI.IdpConfig> providers = Arrays.asList(
             new AuthUI.IdpConfig.GoogleBuilder().build());
 
 
-    //   authenticator
+    //  Authenticator
 
     private FirebaseAuth firebaseAuth;
 
@@ -195,7 +195,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        //menu
+        //menu for sign out
 
 
     @Override
